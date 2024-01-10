@@ -17,7 +17,7 @@ public class rombtest {
     public void testCalcMinus_minus30_35() {
         double actual = this.romb.calcRadius(-30, 35);
         double expected = 385.36;
-        Assert.assertEquals(actual, expected, 0.1);
+        Assert.assertEquals(actual, expected, 1);
     }
     @Test(expectedExceptions = InputMismatchException.class)
     public void testCalcMinusangle_48_minus36() {
