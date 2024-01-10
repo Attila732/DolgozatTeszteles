@@ -8,7 +8,10 @@ public class Romb {
         if (sideA <= 0 || angle <= 0) {
             throw new InputMismatchException();
         }
-        return Math.pow(sideA, 2) * Math.sin(angle);
+        return Math.pow(sideA, 2) * Math.sin(Math.toRadians(angle));
+    }
+    public double calcKerulet(double sideA){
+        return sideA*4;
     }
 }
 
